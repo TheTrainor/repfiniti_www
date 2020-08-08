@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="icon" 
+            type="image/png" 
+            href="favicon-96.png">
+
+        <Title>Verify Your Email</Title>
+        
+        <style>
+            body
+            {
+                font-size: 26px;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+                width: 90%;
+                
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        </style>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <script>
+            function verifyEmail() 
+            {
+                const urlParams = new URLSearchParams(window.location.search);
+                const id = urlParams.get('id');
+                const token = urlParams.get('token');
+
+                const query = "?id=" + id + "&token=" + token;
+            
+                $.get('https://api.getmntr.com/v1/user/verifyemail' + query).setRequestHeader("Access-Control-Allow-Origin").then
+                (
+                    function success(response)
+                    {
+                        $("body").html(response.Message);
+                    },
+                    function fail(data, status) 
+                    {
+                        console.log("Failed to verify email address.");
+
+                        $("body").html("Failed to verify!");
+
+                    }
+                );
+            }
+        </script>
+
+
+    </head>
+
+    <body onload="verifyEmail()">
+        Verifying...
+    </body>
+
+</html>
