@@ -1,0 +1,40 @@
+* 
+{
+    font-family: "Roboto Condensed";
+    font-weight: 300;
+    font-size:  18px;
+}
+
+ul li
+{
+    margin: 12px 0px;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ol li
+{
+    margin: 4px 0px;
+}
+
+ul
+{
+    padding-left: 0;
+}
+
+.block
+{
+    padding-left: 100;
+}
+
+.block-li
+{
+    margin: 4px 0px;
+    list-style-type: circle;
+    padding-left: 100;
+}
+
+div
+{
+    margin: 50px 0px;
+}

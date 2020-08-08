@@ -1,0 +1,233 @@
+* 
+{
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+    * 
+    {
+        /* This is for mobile devices and small viewports - it sets our documents BASE font-size. Since we use em units everywhere else,
+        they automatically adjust to this value */
+        font-size: 10px;
+    }
+
+}
+
+h1
+{
+    font-size: 3em;
+    font-weight: 700;
+}
+
+h2
+{
+    font-size: 2em;
+    font-weight: 400;
+}
+
+
+.mntr-text-medium
+{
+    font-size: 1.7em;
+    font-weight: 300;
+}
+
+.mntr-text-micro
+{
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+li
+{
+    margin: 7px 0px;
+}
+
+a:link
+{
+    color: #00B3F2;
+}
+
+a:visited
+{
+    color: rgb(0, 153, 209);
+}
+
+a:hover
+{
+    color: rgb(29, 195, 255);
+    text-decoration: none;
+}
+
+.f-bold
+{
+    font-weight: 700;
+}
+
+.mntr-center
+{
+    align-self: center;
+    text-align: center;
+}
+
+.center-spacer
+{
+    border-width: 0px 2px 0px 0px;
+    border-style: dashed;
+    border-color: rgb(128, 128, 128, 0.25);
+
+    min-height: 200px;
+}
+
+.mntr-centre-grid
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas: "left right";
+}
+
+.mntr-centre-grid-cell
+{
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    justify-self: center; /* Horizontal Alignment */
+    align-self: center; /* Vertical Alignment */
+}
+
+.mntr-centre-grid-cell-left
+{
+    justify-self: center; /* Horizontal Alignment */
+    align-self: center; /* Vertical Alignment */
+}
+
+.mntr-centre-grid-cell-right
+{
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center; /* Horizontal Alignment */
+    align-self: center; /* Vertical Alignment */
+}
+
+
+
+.mntr-carousel-grid
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.mntr-carousel-grid-cell-left
+{
+    justify-self: center;
+    align-self: center;
+    background-color: rgba(255, 255, 255, 0.80);
+    padding: 20px;
+    border-radius: 10px;
+}
+.mntr-carousel-grid-cell-right
+{
+    justify-self: center;
+    align-self: center;
+}
+
+.mntr-flex-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.mntr-flex-item
+{
+    flex-basis: 40%;
+    padding: 10px;
+    order: 0;
+    align-self: center;
+}
+
+.mntr-text-sm
+{
+    text-shadow: 0px 0px 5px rgb(82, 82, 82);
+}
+
+.mntr-carousel-img
+{
+    min-height: 300px;
+    width: auto;
+    object-fit: cover;
+}
+
+.mntr-feature-img
+{
+    display: block;
+    max-height:  150px;
+    margin: 0em 0 2em 0 ;
+}
+
+.mntr-feature-text
+{
+    margin-bottom: 50px;
+}
+
+.mntr-card
+{
+    height: 550px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 69% 23% 8%;
+}
+
+.mntr-card-img
+{
+    display: block;
+
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+
+    z-index: 1;
+    grid-row: 1 / span 2; /* Indicates start in cell 1 and continue to cell 3 */
+    grid-column: 1;
+
+}
+
+.mntr-card-info::before
+{
+    filter: blur(6px);
+    z-index: -1;
+} 
+
+.mntr-card-info
+{
+    text-align: center;
+    z-index: 2;
+
+    grid-row: 2;
+    grid-column: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.mntr-card-btn
+{
+    z-index: 2;
+    grid-row: 3;
+    grid-column: 1;
+    border: 0;
+    border-radius: 0 0 0 0;
+    
+    /* align-self: center; */
+}
+
+.placeholder-error::placeholder
+{
+    color:orangered;
+}
+
+.eula-text
+{
+    font-size: 12px;
+}
