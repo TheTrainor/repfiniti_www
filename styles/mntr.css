@@ -72,6 +72,11 @@ a:hover
     text-align: center;
 }
 
+.mntr-center-notext
+{
+    align-self: center;
+}
+
 .center-spacer
 {
     border-width: 0px 2px 0px 0px;
@@ -125,7 +130,7 @@ a:hover
     align-self: center;
     background-color: rgba(255, 255, 255, 0.80);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 4px;
 }
 .mntr-carousel-grid-cell-right
 {
