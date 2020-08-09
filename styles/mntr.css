@@ -2,7 +2,7 @@
 {
     font-family: "Roboto";
     font-weight: 400;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -31,6 +31,11 @@ h2
 .mntr-text-medium
 {
     font-size: 1.7em;
+    font-weight: 300;
+}
+
+.inline-link {
+    font-size: 1.0em;
     font-weight: 300;
 }
 
